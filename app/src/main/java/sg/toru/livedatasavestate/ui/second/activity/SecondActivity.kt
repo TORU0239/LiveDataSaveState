@@ -10,7 +10,7 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
         super.onCreate(savedInstanceState)
         supportFragmentManager.beginTransaction().replace(
             R.id.containerFragment,
-            SecondScreenFragment()
+            SecondScreenFragment.instance()
         ).commitNow()
     }
 }
