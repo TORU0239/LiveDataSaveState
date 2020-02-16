@@ -1,9 +1,11 @@
-package sg.toru.livedatasavestate
+package sg.toru.livedatasavestate.ui
 
 import android.os.Bundle
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import sg.toru.livedatasavestate.BR
+import sg.toru.livedatasavestate.R
 import sg.toru.livedatasavestate.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
