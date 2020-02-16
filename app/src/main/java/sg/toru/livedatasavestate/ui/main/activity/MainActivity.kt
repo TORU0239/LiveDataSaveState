@@ -1,4 +1,4 @@
-package sg.toru.livedatasavestate.ui
+package sg.toru.livedatasavestate.ui.main.activity
 
 import android.os.Bundle
 import android.view.ViewGroup

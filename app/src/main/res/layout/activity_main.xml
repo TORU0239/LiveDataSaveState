@@ -11,7 +11,7 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.MainActivity">
+        tools:context=".ui.activity.MainActivity">
 
         <TextView
             android:id="@+id/txt_main"
@@ -24,6 +24,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:id="@+id/btnGoToNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Go To The Next!"
