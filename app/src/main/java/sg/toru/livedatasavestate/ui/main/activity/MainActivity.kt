@@ -1,5 +1,6 @@
 package sg.toru.livedatasavestate.ui.main.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import sg.toru.livedatasavestate.BR
 import sg.toru.livedatasavestate.R
 import sg.toru.livedatasavestate.databinding.ActivityMainBinding
+import sg.toru.livedatasavestate.ui.second.activity.SecondActivity
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
@@ -14,6 +16,10 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         super.onCreate(savedInstanceState)
         val root = findViewById<ViewGroup>(R.id.container)
         val binding: ActivityMainBinding? = DataBindingUtil.bind(root)
+
+        binding?.btnGoToNext?.setOnClickListener {
+            startActivity(Intent(this@MainActivity, SecondActivity::class.java))
+        }
         binding?.setVariable(BR.name, "TEST!!!")
     }
 }
