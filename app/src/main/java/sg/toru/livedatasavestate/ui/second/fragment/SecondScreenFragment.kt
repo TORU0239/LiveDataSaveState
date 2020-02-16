@@ -20,9 +20,19 @@ class SecondScreenFragment : Fragment(R.layout.fragment_second_screen) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = DataBindingUtil.bind(view)
+
+        init()
+    }
+
+    private fun init() {
+        binding?.let { bind ->
+            bind.rcvSecondMain.adapter
+        }
     }
 
     companion object {
         fun instance() = SecondScreenFragment()
     }
 }
+
+
